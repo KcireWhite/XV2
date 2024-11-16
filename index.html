@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MIS XV AMIR</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="CSS/estilo.css" rel="stylesheet" type="text/css"/>
+        <link href="CSS/animaciones.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+        <link href="CSS/emergente.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="loading">
+            Cargando...
+        </div>
+        
+        <section id="inicio" class="home">
+            <header class="in-flex">
+                <img style="filter: blur(1px);" src="IMG/Portada/foto1.webp">
+
+                <div class="imagen-texto texto-animado">
+                    <pre class="charm-bold" >Mis Quince</pre><p style='color:#fff'>06.12.24</p> 
+                </div>
+            </header>
+
+            <div>
+                <div style='text-align: center; align-items: center; margin:10px; '>   
+                    <audio id="reproductor" controls loop>
+                        <source src="AUDIO/song1.ogg" type="audio/ogg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+
+                </div>
+
+                <div style="min-height: 300px; text-align: center; align-items: center " class="caja sombra popins-regular">
+
+                    <div class="animado" >
+                        <img src="IMG/decoracion1.png" style="width: 100%; " >
+                        <p class="popins-regular" style='margin: 5px; font-size:18px;'>Querido amigo o familiar,
+                            quiero compartir contigo la magia
+                            de celebrar mis 15 años.
+                            Ven y acompáñame a disfrutar
+                            de un día lleno de risas,
+                            baile y recuerdos.
+                            Será un momento especial
+                            que recordaré por siempre.</p>
+                        <img src="IMG/decoracion1.png" style="width: 100%; height: 100%; transform: scaleY(-1);" >
+
+                    </div>     
+                </div>
+
+                <div style='text-align: center; align-content: center'>
+
+                </div>
+
+                <div class="cuadro sombra" style='text-align: center;'>
+                    <p class='charm-bold animado' style='font-size: 25px'>La familia Morales te invita</p> 
+                    <p class='popins-regular animado' style="font-size: 18px;">Un momento inigualable, para festejar...</p>
+                    <img class="animado" src="IMG/AmirMorales.png" style="width: 100%; height: 100%;">
+                </div>
+
+                <div style="min-height: 575px; text-align: center; align-items: center margin-bottom: 0;" class="caja sombra popins-regular">
+
+                    <div style='display: grid; grid-template-columns: 1fr 1fr; ' >
+
+                        <div>
+                            <p class='charm-bold sombraT animado' style='font-size: 25px; color: #9d8551;'>MIS PADRES</p>
+                            <pre class='desenfoque charm-regular sombraSuave' style='font-size: 25px; '>Oscar Morales 
+Palacios 
+& 
+Viridiana Aguilar 
+Caraza</pre>
+                            <br>
+                            <img src="IMG/flor.png" style="width: 90%; height: 65%;" >
+
+                        </div>
+                        <div>
+                            <img class='animadoLado' src="IMG/flor2.png" style="width: 145%; height: 65%;" >
+                            <p class='charm-bold sombraT animado' style='font-size: 25px; color: #9d8551;'>MIS PADRINOS</p>
+                            <pre class='desenfoque charm-regular sombraSuave' style='font-size: 25px;'>Michael Solís
+& 
+Jessica Morales 
+Palacios</pre>
+                        </div>
+                    </div>
+                    <br>
+                    <p class='charm-bold sombraT desenfoque' style='margin-top:25%; font-size: 30px; color: #9d8551;'>PARA EL GRAN DIA FALTAN</p>
+                </div>
+
+                <div class="cuadroFondo sombra" style='text-align: center;'>
+                    <div id="contador" class='animado' style="margin-top: 0; margin:5 20%; display: flex; gap: 5%; justify-content: center; font-size: 23px; font-weight: 700; color: #fff;">
+                        <div>
+                            <span id="dias"></span><br>
+                            <span>Días</span>
+                        </div>
+                        <div>
+                            <span id="horas"></span><br>
+                            <span>Horas</span>
+                        </div>
+                        <div>
+                            <span id="minutos"></span><br>
+                            <span>Min.</span>
+                        </div>
+                        <div>
+                            <span id="segundos"></span><br>
+                            <span>Seg.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div style='text-align: center; align-items: center; padding:5%;'>
+                    <p class='charm-bold sombraT' style='margin-top:5%; font-size: 30px; color: #9d8551;'>¿DÓNDE?</p>
+                    <br>
+                    <img src="IMG/catedral.gif" style="width: 100%; height: 65%;" >
+
+                    <!-- Caja de Información -->
+                    <div id='cajainfo' style="min-height: 300px; text-align: center; align-items: center; margin: 0; margin-top: 1%;" class="cuadro sombra popins-regular">
+
+                        <!-- Título por encima de la caja de info -->
+                        <div id='titulo' style='position: relative; margin-top: -50px;  padding: 4px;' class='animado caja sombra'>
+                            <p class='charm-bold sombraT' style='font-size: 30px; color: #fff;'>Catedral de Córdoba</p>
+                            <p class='charm-bold sombraT' style='font-size: 30px; color: #fff;'>La Inmaculada Concepción</p>
+                        </div>
+
+                        <div class='desenfocado'>
+                            <p class='charm-regular sombraSuave' style='font-size: 25px;'>MISA</p>
+                            <p class='charm-regular sombraSuave' style='font-size: 25px;'>HORA:  <span style="color: #8c6e0a;">8:00PM</span></p>
+                            <br>
+                            <p class='charm-regular sombraSuave' style='font-size: 25px; '>DIRECCIÓN</p>
+                            <p class='charm-regular sombraSuave' style='font-size: 25px; color: #8c6e0a;'>Centro, 94500 Córdoba, Ver.</p>
+                            <br>
+                            <a href="https://maps.app.goo.gl/SfqGyJQBykgF2skb9" class="boton-enlace">VER DIRECCIÓN</a>
+                        </div>
+                    </div>
+                </div>
+                <div style='text-align: center; align-items: center; padding:5%;'>
+
+                    <img src="IMG/finca.gif" style="width: 100%; height: 65%;" >
+
+                    <!-- Caja de Información -->
+                    <div id='cajainfo' style="min-height: 300px; text-align: center; align-items: center; margin: 0; margin-top: 1%;" class="cuadro sombra popins-regular">
+
+                        <!-- Título por encima de la caja de info -->
+                        <div id='titulo' style='position: relative; margin-top: -50px;  padding: 4px;' class='animado caja sombra'>
+                            <p class='charm-bold sombraT' style='font-size: 30px; color: #fff;'>Finca</p>
+                            <p class='charm-bold sombraT' style='font-size: 30px; color: #fff;'>Santa Lucia</p>
+                        </div>
+
+                        <div class='desenfocado'>
+                            <p class='charm-regular sombraSuave' style='font-size: 25px;'>RECEPCIÓN</p>
+                            <p class='charm-regular sombraSuave' style='font-size: 25px;'>HORA:  <span style="color: #8c6e0a;">8:00PM</span></p>
+                            <br>
+                            <p class='charm-regular sombraSuave' style='font-size: 25px; '>DIRECCIÓN</p>
+                            <p class='charm-regular sombraSuave' style='font-size: 25px; color: #8c6e0a;'>Santa Teresita <br> Segunda Manzana Del Barreal AV. BARRANCA HONDA SN, 94533 Córdoba, Ver.</p>
+                            <br>
+                            <a href="https://maps.app.goo.gl/zRjZ9yHtzSb36cka9" class="boton-enlace">VER DIRECCIÓN</a>
+                        </div>
+                    </div>
+                </div>
+                <div style="min-height: 300px; text-align: center; align-items: center; margin-bottom: 0; " class="caja sombra popins-regular">
+                    <div class="animado" >
+                        <p class='charm-bold sombraT desenfoque' style='margin-top:25%; font-size: 30px; color: #9d8551;'>ITINERARIO</p>
+                        <br>
+                        <img src="IMG/itinerario.png" style="width: 100%; border-radius: 5%; " >
+                    </div>     
+                </div>
+
+                <div style="height: 200px; margin-top:0;" class='desenfoque' >
+                    <img id='relleno' src="IMG/Portada/foto2.webp" style="width: 100%; height: 100%;  object-fit: cover; " >
+                </div>
+
+                <div style='margin:15%; text-align: center; align-content: center'>
+                    <p class='charm-bold sombraT animado' style='font-size: 40px; color: #9d8551;'>Codigo de Vestimenta</p>
+                    <p class='charm-bold sombraSuave' style='font-size: 30px;'>Etiqueta</p>
+                    <img id='relleno' class="animado" src="IMG/dress.png" style="width: 70%; height: 70%;" >
+                    <p class='popins-regular' style="font-size: 18px;" >(<span style="color:#426672;">Color azul</span> reservado para la quinceañera)</p>
+                </div>
+
+                <div style='margin:15%; text-align: center; align-content: center' class="animado">
+                    <p class='charm-bold sombraT' style='font-size: 40px; color: #9d8551;'>Mesa de Regalos</p>
+                    <p class='popins-regular' style="font-size: 18px;">Tu asistencia es mi mejor regalo,
+                        pero si deseas realizarme un
+                        obsequio dejaré algunas opciones
+                        que recibiré con mucho cariño.</p>
+                    <br>
+                    <div class="cuadro sombra animado" style="height: 100px; width: 100px; margin: 0 auto">
+                        <img src="IMG/pool.webp" style="width: 100%; height: 100%;" >
+                    </div>
+                    <br>
+                    <p class='charm-bold sombraSuave' style='font-size: 40px;'>Evento</p>
+                    <p class='popins-regular '>#51563058</p>
+                    <br>
+                    <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51563058" class="boton-enlace">VER REGALOS</a>
+                </div>
+
+                <div style='margin:15%; margin-bottom: 0; text-align: center; align-content: center'>
+                    <p class='charm-bold sombraT animado' style='font-size: 40px; color: #9d8551;'>Confirma tu asistencia</p>
+                </div>
+                <div style="min-height: 300px; text-align: center; align-items: center; margin: 2; background-color: rgba(157, 133, 81, 0.5); " class="cuadro sombra popins-regular sombraSuave">
+                    <div>
+                        <p class="popins-regular sombraSuave" style='font-size: 17px;'>Completa y envia el siguiente formulario</p>
+                        <form method="post" action="" name="contact-form" style="text-align: left">
+                            <br>
+                            <label style="color: #5a3e14">Escribe el nombre o apellidos de tu familia:</label><br>
+                            <input required type="text" name="Apellido-Familiar" style="padding: 2%; background-color: #f9fffc; border-radius: 5px; width: 100%;">
+                            <br>
+                            <br>
+                            <label style="color: #5a3e14">Eres mi:</label><br><br>
+
+                            <select name="Tipo" required class="select-box">
+                                <option value="Familiar">Familiar</option>
+                                <option value="Amigo">Amigo/a</option>
+                            </select><br>
+                            <br>
+                            <label style="color: #5a3e14">Confirmar Asistencia: </label><br>
+                            <label style="color: #8c6e0a">(Considera tu numero de pases)</label>
+                            <br><br>
+                            <!-- Opción de asistencia -->
+                            <label>
+                                <input type="radio" name="Asistencia" value="Si" required>
+                                Sí asistiré
+                            </label><br>
+                            <label>
+                                <input type="radio" name="Asistencia" value="No" required>
+                                Lo siento, no podremos asistir
+                            </label><br><br>
+                            <!-- Adultos -->
+                            <select id="adultos" name="Adultos" required class="select-box">
+                                <option value="0">Ningun Adulto</option>
+                                <option value="1">1 Adulto</option>
+                                <option value="2">2 Adultos</option>
+                                <option value="3">3 Adultos</option>
+                                <option value="4">4 Adultos</option>
+                                <option value="5">5 Adultos</option>
+                            </select>
+
+                            <!-- Niños -->
+
+                            <select id="ninos" name="Niños" required class="select-box">
+                                <option value="0">Ningun Niño</option>
+                                <option value="1">1 Niño</option>
+                                <option value="2">2 Niños</option>
+                                <option value="3">3 Niños</option>
+                                <option value="4">4 Niños</option>
+                                <option value="5">5 Niños</option>
+                            </select><br><br>
+
+
+
+                            <label style="color: #5a3e14">Escribe el nombre de quien asistirá:</label>
+                            <textarea required name="Nombres" rows="3" style="background-color: #f9fffc; border-radius: 5px; width: 100%;"></textarea>
+                            <br>
+                            <label style="color: #5a3e14;">Dedica unas palabras bonitas a Amir Morales:</label>
+                            <br>
+                            <textarea name="Dedicatoria" rows="5" style="background-color: #f9fffc; border-radius: 5px; width: 100%;"></textarea>
+                            <br>
+
+                            <input type="submit" value="Confirmar" id="submit" style="padding:2px; margin-top:2%">
+                        </form>
+                    </div>
+                </div>
+                <br>
+                <div style="height: 250px; margin-top:0;" class='desenfoque ' >
+                    <img id='relleno' src="IMG/Portada/foto3.webp" style="width: 100%; height: 100%;  object-fit: cover; object-position: center 20%;" >
+                </div>
+                <div class="popins-regular sombraSuave" style="text-align: center; margin: 20px; font-size: 18px">
+                    <p>Hoy celebro mis XV años con una gran sonrisa, rodeada del amor y apoyo de todos ustedes. Gracias por cada momento compartido y por hacer de este día algo tan especial. Su presencia en mi vida es el mejor regalo que puedo recibir.</p>
+                </div>
+
+
+
+
+
+
+
+                <div class="sombra" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100px; width: 100%; margin-bottom: 0;">
+                    <p class="charm-bold sombraSuave" style="font-size: 20px;">MIS XV</p>
+                    <p class="charm-bold sombraSuave" style="font-size: 20px;">06. 12. 24</p>
+                </div>
+
+
+                <div class="modal" id="modal">
+                    <div class="modal-content">
+                        <h2 style="color: #9d8551">¡Empieza la Magia!</h2>
+                        <p>Haz clic en el sobre</p>
+                        <img src="IMG/sobre.png" style="width: 100%; height: 100%" onclick="startPage()" >
+                    </div>
+                    <div class="modal-background"></div> <!-- Fondo transparente detrás -->
+                </div>
+
+            </div>
+
+
+        </section>
+        <script src="JS/Emergente.js" type="text/javascript"></script>
+        <script src="JS/Funciones.js" type="text/javascript"></script>
+    </body>
+</html>

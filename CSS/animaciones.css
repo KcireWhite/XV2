@@ -1,0 +1,97 @@
+.texto-animado{
+    color: #f9db5c;
+    opacity: 0; /* Inicio transparente */
+    animation: aparecer 1s ease-out forwards;
+}
+
+@keyframes aparecer {
+      0% {
+        transform: translate(-50%,30px);
+        opacity: 0; 
+        color: #555; 
+    }
+    25% {
+        transform: translate(-50%,20px); 
+        opacity: 0.3;
+        color: #8c6e0a; 
+    }
+    50% {
+        transform: translate(-50%,10px); 
+        opacity: 0.6; 
+        color: #c7a308;
+    }
+    75% {
+        transform: translate(-50%,5px); 
+        opacity: 0.8; 
+        color: #e1bd4d; 
+    }
+    100% {
+        transform: translate(-50%,0); 
+        opacity: 1; 
+        color: #f9db5c; 
+    }
+}
+
+.animado{
+    opacity: 0;
+    transition: all 1s;
+}
+
+.mostrarAbajo{
+    animation: mostrarAbajo 2s;
+}
+
+@keyframe mostrarAbajo{
+    0%{
+        transform: translateY(60px);
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+}
+
+/*.animadoLado{
+    opacity: 0;
+    transition: all 1s;
+}
+
+.mostrarLado{
+    animation: mostrarLado 2s;
+}
+
+@keyframe mostrarLado{
+     0% {
+        transform: translateX(60px); 
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateX(0); 
+    }
+}*/
+
+
+.desenfoque{
+    filter: blur(10px);
+    transition: all 0.5s;
+}
+
+.desenfocado{
+    animation: desenfocado 1s;
+}
+
+@keyframes desenfocado{
+      0% {
+        filter: blur(10px); /* Comienza con un desenfoque fuerte */
+    }
+    50% {
+        filter: blur(5px); /* Reducimos el desenfoque a la mitad */
+    }
+    100% {
+        filter: blur(0px); /* Termina sin desenfoque */
+    }
+  }
+  
+  
+

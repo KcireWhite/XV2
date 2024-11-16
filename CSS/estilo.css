@@ -1,0 +1,186 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Century Gothic;
+
+}
+
+body{
+    background-image: url("../IMG/fondo2.png");
+    background-size: 200%;
+    background-position: center;
+}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.in-flex{
+    flex: 1;
+
+}
+
+.in-flex:first-child {
+    flex: 2;
+    /*    background-color: #fff;*/
+    margin-bottom: 0px;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+}
+
+.in-flex:first-child img{
+    max-height: 100%;
+    min-width: 100%;
+}
+
+.caja{
+    align-items: center;
+    padding: 25px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(170, 228, 249, 0.5));
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+
+.cuadro{
+    align-items: center;
+    padding: 25px;
+    background-color: #f9fffc;
+    margin: 20px;
+}
+
+.cuadroFondo{
+    align-items: center;
+    padding: 25px;
+    background-image: url("../IMG/cielo.gif");
+    background-size: cover;
+    background-position: center;
+}
+
+.cuadroFondo .animado span {
+    color: #fff; /* Color del texto */
+    text-shadow: 
+        1px 1px 2px rgba(0, 0, 0, 0.4), /* Sombra ligera para suavizar */
+        0 0 5px #9d8551, /* Borde dorado más suave */
+        0 0 10px #9d8551, /* Borde dorado más fuerte */
+        0 0 15px #9d8551; /* Borde dorado aún más fuerte */
+}
+
+
+
+.sombra
+{
+
+    border-color:rgba(75,217,95,255);
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2),
+        0px 5px 10px rgba(0,0,0,0.2);
+}
+
+.sombraT{
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 1.2);
+
+}
+
+.sombraSuave{
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+
+}
+audio{
+    width:100%;
+}
+
+.imagen-texto {
+    position: absolute;
+    text-align: center;
+    top: 25%; /* Centrado vertical */
+    left: 50%; /* Centrado horizontal */
+    color: #f9db5c; /* Color del texto */
+    font-size: 55px; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 1); /* Sombra para mejorar la legibilidad */
+}
+
+
+.charm-bold {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.charm-regular {
+    font-family: "Charm", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    
+}
+
+.boton-enlace {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #84cce4;
+    ;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    grid-template-rows: repeat(6, auto); /* 6 filas */
+    gap: 10px;
+    padding: 10px;
+}
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+label{
+    margin:2%;
+}
+
+  .select-box {
+        width: 200px;
+        padding: 10px;
+        font-size: 16px;
+        background-color: #f4f1e1; /* Color de fondo claro */
+        border: 2px solid #8c6e0a; /* Borde color oro */
+        border-radius: 8px; /* Bordes redondeados */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        color: #5a3e14; /* Color del texto */
+        transition: all 0.3s ease;
+    }
+
+    .select-box:focus {
+        border-color: #6c4f2b; /* Cambio de color al hacer focus */
+        box-shadow: 0 0 5px rgba(140, 110, 10, 0.7); /* Resaltado del borde al enfocarse */
+    }
+
+    label {
+        font-size: 16px;
+        font-weight: normal;
+       color: #8c6e0a; /* Color marrón oscuro para las etiquetas */
+    }
+
+    button:hover {
+        background-color: #7a5b35; /* Cambio de color al pasar el ratón */
+    }
+    
+    body {
+    font-family: 'Dancing Script', cursive;
+}
+
+

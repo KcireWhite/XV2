@@ -1,0 +1,77 @@
+#inicio {
+    visibility: hidden; /* Oculta el contenido */
+}
+
+#inicio.loaded {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2em;
+    z-index: 1000;
+}
+
+.hidden {
+    visibility: hidden; /* Esto ocultará el loader */
+}
+
+/* Estilos para la ventana emergente */
+.modal {
+
+    position: fixed; /* Fija en la pantalla */
+    top: 0;
+    left: 0;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background: rgba(170, 229, 248, 0.7);
+    z-index: 1000; /* Que quede encima del contenido */
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-65%, -70%);
+
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Fondo opaco detrás de la ventana emergente */
+.modal-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Opacidad para el fondo */
+    z-index: -1; /* Para que el contenido principal quede encima */
+}
+
+/* Estilos del botón */
+.btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
